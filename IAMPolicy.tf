@@ -80,8 +80,8 @@ resource "aws_iam_policy" "policy_for_EC2" {
         "Effect": "Allow",
         "Action": ["s3:GetObject",
                    "s3:ListBucket"],
-        "Resource": ["arn:aws:s3:::${var.build-bucker-name}/*",
-                     "arn:aws:s3:::${var.build-bucker-name}"]
+        "Resource": ["arn:aws:s3:::${var.build-bucket-name}/*",
+                     "arn:aws:s3:::${var.build-bucket-name}"]
       },
       {
         "Effect" : "Allow",
